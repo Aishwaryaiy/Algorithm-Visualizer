@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ABOUT US</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+  /* @import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Exo 2', sans-serif; */
+}
+
+body{
+  background-image: url("BackgroundAbout.jpg");
+}
+
+.wrapper{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.wrapper h1{
+  font-family: 'Yatra One', cursive;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.our_team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: hidden; */
+  /* animation: moveright 1s linear 1;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards; */
+}
+@keyframes moveright
+{
+  0%
+  {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100%
+  {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+
+.our_team .team_member{
+  width: 250px;
+  margin: 5px;
+  background: rgb(250, 249, 249);
+  padding: 20px 10px;
+  animation: moveright 1s linear 1;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.our_team .team_member .member_img{
+  background: #ffffff;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.our_team .team_member .member_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.our_team .team_member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.our_team .team_member span{
+  font-size: 10px;
+}
+
+.our_team .team_member p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* .mem1
+{
+  animation: moveright 1s linear 1;
+  animation-delay: 5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+} */
+
+header
+{
+    
+    text-align: center;
+    border: 2px solid rgb(241, 237, 237);
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    /* display: flex; */
+    animation: movedown 1s linear 1;
+    animation-delay: 40ms;
+    visibility: hidden;
+    animation-fill-mode: forwards
+
+    /* background-color: #41462f; */
+}
+@keyframes movedown
+{
+  0%
+  {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%
+  {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+</style>
+<body>
+  <header>
+    <h1>Our Team</h1>
+  </header>
+
+<div class="wrapper">
+    
+    <div class="our_team">
+        <div class="team_member">
+          <div class="member_img">
+             <img src="Aishwarya.png" alt="our_team">
+            
+          </div>
+          <h3>Aishwarya Iyer</h3>
+          
+        </div>
+        
+        <div class="team_member">
+           <div class="member_img">
+              <div class="mem1">
+                <img src="Madhavi.png" alt="our_team">
+              </div>
+            <h3>Madhavi jagannath Jadhav</h3>
+          </div>  
+        </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="Sakshi.jpeg" alt="our_team">
+           
+          </div>
+          <h3>Sakshi Pramod Narkhede</h3>
+         
+          
+      </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="Mahalaxumi.jpeg" alt="our_team">
+             
+             
+          </div>
+          <h3>Mahalaxmi Karthesan</h3>
+          
+      </div>  
+    </div>
+</div>	
+
+</body>
+</html>
